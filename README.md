@@ -1,4 +1,4 @@
-# Notes App
+# MarkLite
 
 Упрощённая копия приложения «Заметки» macOS, реализованная на React с TypeScript. Поддерживает авторизацию, просмотр и редактирование заметок в формате Markdown, поиск по заметкам и PWA для оффлайн-режима. Приложение создано в рамках учебного задания.
 
@@ -24,8 +24,8 @@
 
 1. Клонируйте репозиторий:
     ```bash
-    git clone git@github.com:AnastasiyaGuryanova/notes.git
-    cd notes
+    git clone git@github.com:AnastasiyaGuryanova/mark-lite.git
+    cd mark-lite
     ```
 2. Установите зависимости:
     ```bash

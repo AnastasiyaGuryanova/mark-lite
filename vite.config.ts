@@ -15,8 +15,8 @@ export default defineConfig({
 				enabled: true,
 			},
 			manifest: {
-				name: 'Notes',
-				short_name: 'NotesApp',
+				name: 'MarkLite',
+				short_name: 'MarkLiteApp',
 				description: 'Приложение для создания заметок с поддержкой',
 				theme_color: '#777c91',
 				background_color: '#4a5167',
