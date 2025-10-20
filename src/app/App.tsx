@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { routesConfig, PrivateRoute } from './routers';
 import { withProviders } from './providers';
-import { ErrorBoundary } from 'Shared/ui';
+import { ErrorBoundary } from 'shared/ui';
 
 export const App = () => {
 	return withProviders(

@@ -2,8 +2,8 @@ import { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Box } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
-import { Note } from 'Entities/Note';
-import { useSidebar } from 'Features/notes';
+import { Note } from 'entities/Note';
+import { useSidebar } from 'features/notes';
 import { NoteItem } from './NoteItem';
 
 interface NoteListProps {

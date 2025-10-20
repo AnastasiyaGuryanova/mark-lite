@@ -1,12 +1,12 @@
 import { FC, useCallback, useEffect, useState } from 'react';
-import { Note } from 'Entities/Note';
+import { Note } from 'entities/Note';
 import {
 	useNotesActions,
 	NotesProviderProps,
 	NotesContext,
 	NotesContextType,
-} from 'Features/notes';
-import { useAuth } from 'Features/auth';
+} from 'features/notes';
+import { useAuth } from 'features/auth';
 
 export const NotesProvider: FC<NotesProviderProps> = ({ children }) => {
 	const { user } = useAuth();

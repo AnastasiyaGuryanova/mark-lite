@@ -1,20 +1,20 @@
 import { lazy } from 'react';
-import { internalPaths } from 'Shared/constants';
+import { internalPaths } from 'shared/constants';
 import { RouteConfig } from './routes.types';
 import { SuspenseWithLoader } from './SuspenseWithLoader';
 
 const Notes = lazy(() =>
-	import('Pages/Notes/Notes').then((module) => ({
+	import('pages/Notes/Notes').then((module) => ({
 		default: module.Notes,
 	}))
 );
 const Login = lazy(() =>
-	import('Pages/Login/Login').then((module) => ({
+	import('pages/Login/Login').then((module) => ({
 		default: module.Login,
 	}))
 );
 const NotFound = lazy(() =>
-	import('Pages/NotFound/NotFound').then((module) => ({
+	import('pages/NotFound/NotFound').then((module) => ({
 		default: module.NotFound,
 	}))
 );

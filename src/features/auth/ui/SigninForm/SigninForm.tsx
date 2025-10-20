@@ -4,8 +4,8 @@ import { useMediaQuery } from '@mantine/hooks';
 import { IconAt } from '@tabler/icons-react';
 import { useForm } from '@mantine/form';
 import { SigninFormProps } from './SigninForm.types';
-import { Button } from 'Shared/ui';
-import { emailValidator, passwordValidator } from 'Features/auth';
+import { Button } from 'shared/ui';
+import { emailValidator, passwordValidator } from 'features/auth';
 
 export const SigninForm: FC<SigninFormProps> = ({
 	onSubmit,
