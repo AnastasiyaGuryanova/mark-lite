@@ -4,7 +4,12 @@ import { useMediaQuery } from '@mantine/hooks';
 import { IconAt } from '@tabler/icons-react';
 import { useForm } from '@mantine/form';
 import { SignupFormProps } from './SignupFormProps';
-import { Button } from 'Shared/ui';
+import { Button } from 'shared/ui';
+import {
+	emailValidator,
+	passwordValidator,
+	confirmPasswordValidator,
+} from 'features/auth';
 
 export const SignupForm: FC<SignupFormProps> = ({
 	onSubmit,
@@ -20,12 +25,10 @@ export const SignupForm: FC<SignupFormProps> = ({
 			confirmPassword: '',
 		},
 		validate: {
-			email: (value) =>
-				/^\S+@\S+\.\S+$/.test(value) ? null : 'Введите корректный email.',
-			password: (value) =>
-				value.length >= 6 ? null : 'Пароль должен быть не менее 6 символов.',
+			email: emailValidator,
+			password: passwordValidator,
 			confirmPassword: (value, values) =>
-				value === values.password ? null : 'Пароли не совпадают.',
+				confirmPasswordValidator(value, (values as any).password),
 		},
 	});
 

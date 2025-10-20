@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { SidebarContext } from 'Features/notes';
+import { SidebarContext } from 'features/notes';
 import { useDisclosure } from '@mantine/hooks';
 
 export const SidebarProvider = ({ children }: { children: ReactNode }) => {

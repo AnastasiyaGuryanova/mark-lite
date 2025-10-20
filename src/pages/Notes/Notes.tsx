@@ -1,5 +1,5 @@
-import { Sidebar, Workspace } from 'Features/notes';
-import { AppShellComponent } from 'Widgets/AppShell';
+import { Sidebar, Workspace } from 'features/notes';
+import { AppShellComponent } from 'widgets/AppShell';
 
 export const Notes = () => {
 	return (

@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { IconLogout } from '@tabler/icons-react';
 import { ActionIcon } from '@mantine/core';
-import { useAuth } from 'Features/auth';
+import { useAuth } from 'features/auth';
 
 export const LogoutButton = () => {
 	const auth = useAuth();

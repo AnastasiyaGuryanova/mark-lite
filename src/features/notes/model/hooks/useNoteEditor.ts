@@ -2,7 +2,7 @@ import { useEditor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import { Markdown } from 'tiptap-markdown';
 import { debounce } from 'lodash';
-import { Note } from 'Entities/Note';
+import { Note } from 'entities/Note';
 import TextStyle from '@tiptap/extension-text-style';
 
 export const useNoteEditor = (

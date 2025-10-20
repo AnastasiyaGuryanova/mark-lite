@@ -1,7 +1,7 @@
 import { FC, useState } from 'react';
 import { Stack, Flex, ActionIcon } from '@mantine/core';
-import { useNotes, useNoteEditor } from 'Features/notes';
-import { Note } from 'Entities/Note';
+import { useNotes, useNoteEditor } from 'features/notes';
+import { Note } from 'entities/Note';
 import { EditorContent } from '@tiptap/react';
 import { EditableTitle } from './EditableTitle';
 import { MenuBar } from './MenuBar';

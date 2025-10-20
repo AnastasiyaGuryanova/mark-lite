@@ -1,5 +1,5 @@
 import { Suspense, FC } from 'react';
-import { Loader } from 'Shared/ui';
+import { Loader } from 'shared/ui';
 import { SuspenseWithLoaderProps } from './routes.types';
 
 export const SuspenseWithLoader: FC<SuspenseWithLoaderProps> = ({ children }) => {

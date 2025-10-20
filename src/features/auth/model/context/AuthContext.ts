@@ -1,4 +1,4 @@
 import { createContext } from 'react';
-import { AuthContextType } from 'Features/auth';
+import { AuthContextType } from 'features/auth';
 
 export const AuthContext = createContext<AuthContextType | null>(null);

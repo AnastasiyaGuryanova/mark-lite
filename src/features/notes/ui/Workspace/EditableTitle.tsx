@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import { Title } from '@mantine/core';
-import { TextInputModal } from 'Shared/ui';
+import { TextInputModal } from 'shared/ui';
 
 interface EditableTitleProps {
 	title: string;
