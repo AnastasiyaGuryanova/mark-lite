@@ -21,18 +21,7 @@
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
 		"noUncheckedSideEffectImports": true,
-		"types": ["vite-plugin-pwa/client"],
-
-		/* Paths for aliases */
-		"baseUrl": "src",
-		"paths": {
-			"app/*": ["app/*"],
-			"pages/*": ["pages/*"],
-			"widgets/*": ["widgets/*"],
-			"features/*": ["features/*"],
-			"entities/*": ["entities/*"],
-			"shared/*": ["shared/*"]
-		}
+		"types": ["vite-plugin-pwa/client"]
 	},
 	"include": ["src"]
 }
