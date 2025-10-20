@@ -2,10 +2,10 @@ import { FC, useState } from 'react';
 import { marked } from 'marked';
 import { Flex, Box, Stack, ActionIcon } from '@mantine/core';
 import { IconPencil, IconTrash } from '@tabler/icons-react';
-import { Note } from 'Entities/Note';
-import { useNotes } from 'Features/notes';
+import { Note } from 'entities/Note';
+import { useNotes } from 'features/notes';
 import { EditableTitle } from './EditableTitle';
-import { Modal } from 'Shared/ui';
+import { Modal } from 'shared/ui';
 import './styles/editorStyles.css';
 
 export const NoteViewer: FC<{ note: Note; onEdit: () => void }> = ({ note, onEdit }) => {

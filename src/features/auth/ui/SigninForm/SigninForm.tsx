@@ -4,7 +4,8 @@ import { useMediaQuery } from '@mantine/hooks';
 import { IconAt } from '@tabler/icons-react';
 import { useForm } from '@mantine/form';
 import { SigninFormProps } from './SigninForm.types';
-import { Button } from 'Shared/ui';
+import { Button } from 'shared/ui';
+import { emailValidator, passwordValidator } from 'features/auth';
 
 export const SigninForm: FC<SigninFormProps> = ({
 	onSubmit,
@@ -19,10 +20,8 @@ export const SigninForm: FC<SigninFormProps> = ({
 			password: '',
 		},
 		validate: {
-			email: (value) =>
-				/^\S+@\S+\.\S+$/.test(value) ? null : 'Введите корректный email.',
-			password: (value) =>
-				value.length >= 6 ? null : 'Пароль должен быть не менее 6 символов.',
+			email: emailValidator,
+			password: passwordValidator,
 		},
 	});
 

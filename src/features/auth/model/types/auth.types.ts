@@ -1,4 +1,4 @@
-import { User } from 'Entities/User';
+import { User } from 'entities/User';
 
 export interface AuthContextType {
 	user: User | null;

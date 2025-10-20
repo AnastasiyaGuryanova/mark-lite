@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Box, Text } from '@mantine/core';
-import { Note } from 'Entities/Note';
-import { formatDateTimeNoSeconds } from 'Shared/utils';
+import { Note } from 'entities/Note';
+import { formatDateTimeNoSeconds } from 'shared/utils';
 
 interface NoteItemProps {
 	note: Note;
