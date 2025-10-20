@@ -8,7 +8,7 @@ export const PrivateRoute: FC<PrivateRouteProps> = ({ element }) => {
 	const auth = useAuth();
 	const location = useLocation();
 
-	if (auth.user === null) {
+	if (!auth.user) {
 		return (
 			<Navigate
 				to={internalPaths.login}
